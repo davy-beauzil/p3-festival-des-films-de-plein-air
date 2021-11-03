@@ -1,0 +1,58 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* FONT -->  */
+body {
+  font-family: "Roboto", sans-serif;
+}
+.bebas {
+  font-family: "Bebas Neue", sans-serif;
+}
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+h1,
+.title-1 {
+  @apply bebas text-7xl uppercase;
+}
+h2,
+.title-2 {
+  @apply bebas text-6xl uppercase;
+}
+h3,
+.title-3 {
+  @apply bebas text-5xl uppercase;
+}
+h4,
+.title-4 {
+  @apply bebas text-4xl uppercase;
+}
+h5,
+.title-5 {
+  @apply bebas text-3xl uppercase;
+}
+h6,
+.title-6 {
+  @apply bebas text-2xl uppercase;
+}
+p,
+a,
+li,
+label {
+  @apply roboto;
+}
+
+/*  <-- FONT */
+
+/* HEADER -->  */
+.header_social_icon {
+  @apply text-xl ml-8;
+}
+.header_social_icon:hover {
+  @apply text-custom-red duration-300;
+}
+/*  <-- HEADER */
+
+/* EXAMPLE -->  */
+/*  <-- EXAMPLE */
