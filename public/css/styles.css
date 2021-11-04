@@ -2,57 +2,85 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/* FONT -->  */
-body {
-  font-family: "Roboto", sans-serif;
+@layer base {
+  .bebas {
+    font-family: "Bebas Neue", sans-serif;
+  }
+  .roboto {
+    font-family: "Roboto", sans-serif;
+  }
+  body {
+    @apply roboto;
+  }
+  h1,
+  .title-1 {
+    @apply bebas text-7xl uppercase;
+  }
+  h2,
+  .title-2 {
+    @apply bebas text-6xl uppercase;
+  }
+  h3,
+  .title-3 {
+    @apply bebas text-5xl uppercase;
+  }
+  h4,
+  .title-4 {
+    @apply bebas text-4xl uppercase;
+  }
+  h5,
+  .title-5 {
+    @apply bebas text-3xl uppercase;
+  }
+  h6,
+  .title-6 {
+    @apply bebas text-2xl uppercase;
+  }
 }
-.bebas {
-  font-family: "Bebas Neue", sans-serif;
-}
-.roboto {
-  font-family: "Roboto", sans-serif;
-}
-h1,
-.title-1 {
-  @apply bebas text-7xl uppercase;
-}
-h2,
-.title-2 {
-  @apply bebas text-6xl uppercase;
-}
-h3,
-.title-3 {
-  @apply bebas text-5xl uppercase;
-}
-h4,
-.title-4 {
-  @apply bebas text-4xl uppercase;
-}
-h5,
-.title-5 {
-  @apply bebas text-3xl uppercase;
-}
-h6,
-.title-6 {
-  @apply bebas text-2xl uppercase;
-}
-p,
-a,
-li,
-label {
-  @apply roboto;
-}
-
-/*  <-- FONT */
 
 /* HEADER -->  */
-.header_social_icon {
-  @apply text-xl ml-8;
+header {
+  background-image: url("../assets/header-background.jpeg");
+  background-position: 0px -100px;
 }
-.header_social_icon:hover {
-  @apply text-custom-red duration-300;
+.social_icon_link {
+  @apply ml-8 flex items-center duration-300;
+}
+.social_icon_link:hover {
+  @apply text-custom-red;
+}
+.header_nav {
+  @apply max-w-screen-xl m-auto flex flex-row transform shadow-lg;
+  transform: translateY(calc(-100% + 1px));
+}
+.header_nav_link {
+  @apply bg-custom-white duration-300 flex-1 text-center p-4 font-bold;
+}
+.header_nav_link:hover {
+  @apply bg-custom-lightgray text-custom-red;
+}
+.header_nav_link.active {
+  @apply bg-custom-lightgray text-custom-red;
 }
 /*  <-- HEADER */
 
-/* EXAMPLE -->  */
-/*  <-- EXAMPLE */
+/* FOOTER -->  */
+.footer_social_icon_link {
+  @apply mr-8 flex items-center duration-300;
+}
+/*  <-- FOOTER */
+
+/* COMPONENTS -->  */
+.btn_white_red {
+  @apply text-custom-dark bg-custom-lightgray rounded-full  duration-300;
+}
+.btn_white_red:hover {
+  @apply text-custom-lightgray bg-custom-red;
+}
+.btn_white_red > svg {
+  @apply text-custom-red pl-2 duration-300;
+}
+.btn_white_red:hover > svg {
+  @apply text-custom-white;
+}
+/*  <-- COMPONENTS */

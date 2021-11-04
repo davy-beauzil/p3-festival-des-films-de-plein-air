@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "postcss-cli": "^9.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.2.17",
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+  },
+  "scripts": {
+    "dev:css": "NODE_ENV=production npx tailwindcss -i public/css/styles.css -o public/css/compiled.css --verbose -w",
+    "dev:postcss": "TAILWIND_MODE=watch postcss public/css/styles.css -o public/css/compiled.css --verbose -w",
+    "build:css": "tailwindcss -o src/tailwind.css --minify"
+  }
+}
