@@ -15,7 +15,8 @@
 </head>
 
 <body>
-    <nav class="nav_mobile hidden flex flex-col items-center justify-center text-4xl bebas text-custom-lightgray bg-custom-dark absolute z-50 w-full h-full">
+    <!-- MOBILE NAVIGATION -->
+    <nav class="nav_mobile hidden flex flex-col items-center justify-center text-4xl bebas text-custom-lightgray bg-custom-dark absolute z-40 w-full h-full">
         <div class="flex flex-col mb-8">
             <a href="#" class="my-2 active">Accueil</a>
             <a href="#" class="my-2">Actualité</a>
@@ -36,28 +37,53 @@
             </div>
         </div>
     </nav>
+
+    <!-- NEWSLETTER FORM -->
+    <div class="newsletter_form hidden bg-custom-dark absolute w-full h-full z-50 pt-4 px-8 items-center">
+
+        <div class="max-w-screen-md mx-auto text-justify">
+            <p class="title-2 text-custom-red mb-8 text-center">Rester informé sur le festival</p>
+
+            <form class="flex flex-col">
+                <div class="flex flex-row justify-center mb-8">
+                    <input type="email" class="bg-custom-white/0 border border-custom-lightgray/30 rounded py-2 px-4 mr-2 text-custom-lightgray" placeholder="Votre adresse mail">
+                    <button class="btn_white_red py-2 ml-2 px-8">S'inscrire<i class="fas fa-search"></i></button>
+                </div>
+                <div>
+                    <input type="checkbox" name="consentement" id="consentement">
+                    <label class="text-custom-lightgray" for="consentement">
+                        En renseignant votre adresse mail, vous acceptez de recevoir chaque semaine les dernières actualités du festival, les programmes annoncés et vous consentez avoir pris connaissance de notre <a class="underline text-custom-red" href="#">Politique de Confidentialité</a>.
+                        <br><br>
+                        Vous pouvez vous désinscrire à tout moment en cliquant sur le lien « Me désabonner » présent sur chaque mail envoyé où en faisant la demande à cette adresse mail : <a class="underline text-custom-red" href="mailto:contact@ffpa.org">contact@ffpa.org</a>.
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div></div>
+
+    </div>
+
+    <!-- HEADER -->
     <header class="text-custom-lightgray bg-cover">
         <div class="max-w-screen-2xl m-auto">
-
             <!-- HEADER TOP -->
             <div class="flex flex-row items-center justify-between pt-4 px-8 2xl:px-0">
                 <a href="./index.html"><img src="public/assets/light-logo.png" alt="Logo du Festival des Films de Plein Air" width="200px"></a>
                 <div class="flex-row items-center hidden lg:flex">
-                    <input type="text" class="border-4 border-black rounded border border-gray-300 py-px px-2" placeholder="Rechercher">
+                    <input type="text" class="border border-black rounded border-gray-300 py-px px-2" placeholder="Rechercher">
                     <button class="px-2 hover:text-custom-red duration-300 ml-1"><i class="fas fa-search"></i></button>
                     <a href="https://www.facebook.com/" class="social_icon_link ml-8"><i class="fa-brands fa-facebook-f text-xl"></i></a>
                     <a href="#" class="social_icon_link ml-8"><i class="fa-brands fa-instagram text-xl"></i></a>
                     <a href="#" class="social_icon_link ml-8"><i class="fa-brands fa-twitter text-xl"></i></a>
                     <a href="#" class="social_icon_link ml-8"><i class="fa-brands fa-linkedin-in text-xl"></i></a>
                 </div>
-                <!-- <button class="bars_button absolute right-8 z-50 lg:hidden"><i class="fa-solid fa-bars text-2xl"></i></button> -->
-                <div class="btn_bars not-active absolute right-8 z-50 cursor-pointer w-10 lg:hidden">
+                <!-- mobile navigation button -->
+                <div onclick="barsButton()" class="btn_bars not-active absolute right-8 z-50 cursor-pointer w-10 lg:hidden">
                     <span class="w-full bg-custom-lightgray h-1 duration-300 relative rounded-sm block mt-[7px]"></span>
                     <span class="w-full bg-custom-lightgray h-1 duration-300 relative rounded-sm block mt-[7px]"></span>
                     <span class="w-full bg-custom-lightgray h-1 duration-300 relative rounded-sm block mt-[7px]"></span>
                 </div>
             </div>
-
             <!-- HEADER BODY -->
             <div class="flex flex-row items-center ml-8 py-48 2xl:ml-0">
                 <p class="title-2 w-auto mr-8">Festival ouvert <br>du <span class="text-custom-red">05 au 08 août</span>
@@ -67,11 +93,10 @@
 
         </div>
     </header>
-    <!-- -translate-y-20 -->
+
     <section class="bg-custom-white shadow-lg max-w-screen-2xl mx-auto mt-[-80px] transform">
-        <!-- NAVIGATION -->
-        <nav class="nav_computer max-w-screen-xl m-auto lg:flex flex-row transform shadow-lg hidden transform translate-y-[calc(-100%+1px)]">
-            <!-- transform translate-y-[calc(-100%+1px)] -->
+        <!-- COMPUTER NAVIGATION  -->
+        <nav class="nav_computer max-w-screen-xl m-auto lg:flex flex-row transform shadow-lg hidden translate-y-[calc(-100%+1px)]">
             <a href="#" class="header_nav_link active">Accueil</a>
             <a href="#" class="header_nav_link">Actualité</a>
             <a href="#" class="header_nav_link">Programme</a>
@@ -81,18 +106,33 @@
 
         <!-- CONTENT -->
         <div class="sm:p-16 p-8 lg:pt-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, enim sint. Doloremque iure dignissimos vero aliquam! Rerum dolorum recusandae facere fuga, eaque et aperiam. Corporis doloribus error, animi quo ex iure illo veritatis deserunt nemo repellat delectus, alias laboriosam commodi cumque rem impedit neque maxime obcaecati nam ab pariatur earum asperiores hic. Voluptatibus magnam accusantium odio nesciunt quae fuga amet? Cum, delectus eveniet veritatis adipisci enim beatae nobis eligendi a unde esse numquam nesciunt maiores et dolore ducimus aperiam est qui laboriosam, dolorem quaerat eos repudiandae. Enim, possimus fugiat, hic esse atque, itaque quos voluptas nisi asperiores reiciendis soluta error nobis debitis consequatur quia! Velit deleniti incidunt, quidem reiciendis suscipit, fugiat voluptatum et itaque animi numquam ex eum voluptas esse delectus? Maiores nostrum consectetur magnam sit ex odit inventore labore id? Omnis consequatur eos nostrum similique, voluptates saepe id rerum iste officiis ut, est possimus iusto! Ipsum excepturi explicabo quae ratione blanditiis recusandae facere laborum iusto error dolores! Rerum mollitia fuga doloremque nostrum tenetur, amet fugiat architecto voluptate velit aut a at asperiores sunt quis numquam? Laboriosam cupiditate praesentium consequatur suscipit, similique fugit. Mollitia recusandae debitis perspiciatis, vel corporis natus possimus error, explicabo deserunt incidunt provident alias ea hic placeat. Voluptas itaque voluptatibus exercitationem officiis numquam eligendi molestiae obcaecati sit iure explicabo dolorem temporibus ducimus eos culpa aliquid ut maiores, beatae eius ipsam. Velit molestias distinctio atque deserunt magnam cumque amet quaerat sint explicabo minima ipsa alias quas similique maiores quibusdam, quam sapiente perspiciatis voluptates omnis, praesentium nobis! Sint et labore voluptatibus ullam magnam adipisci aperiam praesentium, aliquam, nisi optio dolore quibusdam, ea laudantium illum. Id provident quia quae a voluptate, accusantium laborum blanditiis molestias officiis optio hic labore aspernatur! Odit laborum commodi, maiores consequatur dignissimos assumenda, esse excepturi, doloremque eaque quod nihil nostrum itaque debitis inventore! Fugit doloribus, vel quidem eum ullam laborum aliquam? Architecto enim quae illo sunt alias. Eos fuga eius vero illo veniam rem, repudiandae quod autem corporis ut dolor tempore totam vel magnam soluta necessitatibus quaerat quia non similique! Modi eveniet nemo impedit labore voluptas ab, incidunt voluptatum corrupti expedita! Exercitationem officiis optio necessitatibus assumenda tenetur ad harum laborum, corporis atque magnam quos esse rerum vel cupiditate facilis nemo! Voluptate quaerat voluptas consectetur. Obcaecati eveniet corporis alias laboriosam esse perspiciatis provident similique? Ducimus, ipsam atque! Perferendis rem maxime repellendus quasi, deserunt nemo itaque iste in quisquam tenetur debitis voluptatem obcaecati quae doloribus? Id ad accusamus quasi soluta assumenda optio magnam laudantium pariatur ea ut repellat incidunt molestiae consequuntur laboriosam sequi molestias, odit esse? Ipsam, est! Facilis esse modi eos adipisci. Sequi veritatis eum perferendis qui at. Nam odio facere quos illo consequatur tempora id, saepe doloremque dolores dolorem facilis cum vel quaerat qui possimus. Odit fugit iure cum praesentium vero repellendus est modi voluptate quisquam repellat totam rem, nemo excepturi quos. Repudiandae sint dignissimos reiciendis natus unde laborum earum voluptas nihil totam ipsa voluptatum debitis, laboriosam omnis nostrum officia tempora veniam incidunt libero, nobis magni, harum ea exercitationem. Libero tempora vero est repellendus totam sapiente!
+
+            <h1>test</h1>
+
+        </div>
+
+        <div class="shadow-inner text-justify">
+            <div class="p-8 md:w-11/12 md:mx-auto">
+                <p class="text-center title-4 mb-4">Rester informé sur le festival</p>
+                <form class="flex flex-col justify-center">
+                    <div class="flex flex-row justify-center">
+                        <button onclick="showNewsletterForm()" class="btn_red_white newsletter_button py-2 px-4">
+                            S'inscrire à la newsletter
+                            <i class="fa-solid fa-envelope"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
 
     </section>
 
+    <!-- FOOTER -->
     <footer class="bg-custom-dark mt-[-80px] pt-28 p-8 sm:px-20 sm:pt-40 text-custom-lightgray">
         <div class="max-w-screen-2xl mx-auto">
             <div class="flex flex-col mb-8 max-w-screen-xl mx-auto">
-
                 <!-- FOOTER TOP (3 blocks) -->
                 <div class="flex md:flex-row flex-wrap justify-between">
-
                     <div class="col-start-1 col-end-3 justify-self-end m-4">
                         <p class="title-5 text-custom-red">Navigation</p>
                         <div class="flex flex-col">
@@ -103,7 +143,6 @@
                             <a href="#">Contact</a>
                         </div>
                     </div>
-
                     <div class="col-start-4 col-end-6 justify-self-center m-4">
                         <p class="title-5 text-custom-red">Programme</p>
                         <div class="flex flex-col">
@@ -114,7 +153,6 @@
                             <a href="#">Lorem ipsum dolor sit.</a>
                         </div>
                     </div>
-
                     <div class="col-start-7 col-end-9 justify-self-start m-4">
                         <p class="title-5 text-custom-red">Liens utiles</p>
                         <div class="flex flex-col">
@@ -132,7 +170,6 @@
                     <div class="col-start-1 col-end-13 justify-self-end mt-8">
                         <button href="#" class="py-2 px-4 btn_white_red">S'inscrire à la newsletter <i class="fa-solid fa-envelope text-custom-red hover:text-custom-lightgray"></i></button>
                     </div>
-
                     <div class="col-start-6 col-end-9 flex flex-row justify-self-center mt-8">
                         <a href="https://www.facebook.com/" class="social_icon_link mx-4"><i class="fa-brands fa-facebook-f text-xl"></i></a>
                         <a href="#" class="social_icon_link mx-4"><i class="fa-brands fa-instagram text-xl"></i></a>
@@ -140,8 +177,6 @@
                         <a href="#" class="social_icon_link mx-4"><i class="fa-brands fa-linkedin-in text-xl"></i></a>
                     </div>
                 </div>
-
-
             </div>
 
             <!-- FOOTER BOTTOM (copyright) -->
@@ -151,7 +186,9 @@
         </div>
     </footer>
 
+    <!-- font awesome-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- mobile navigation script -->
     <script src="./public/js/show-nav.js"></script>
 </body>
 

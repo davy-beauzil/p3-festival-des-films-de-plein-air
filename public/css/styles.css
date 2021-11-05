@@ -89,6 +89,20 @@ header {
   @apply text-custom-white;
 }
 
+/* bouton rouge / hover:blanc */
+.btn_red_white {
+  @apply text-custom-lightgray bg-custom-red rounded-full  duration-300;
+}
+.btn_red_white:hover {
+  @apply text-custom-red bg-custom-lightgray;
+}
+.btn_red_white > svg {
+  @apply text-custom-lightgray pl-2 duration-300;
+}
+.btn_red_white:hover > svg {
+  @apply text-custom-red;
+}
+
 /* bouton menu bars */
 .btn_bars.active span:nth-child(1) {
   animation: ease 0.7s top forwards;
