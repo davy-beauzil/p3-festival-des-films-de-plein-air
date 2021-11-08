@@ -8,9 +8,9 @@
     <title>Festival du film de plein air de Paris - Accueil</title>
 
     <!-- css compiled from tailwind -->
-    <link rel="stylesheet" href="public/css/compiled.css">
+    <link rel="stylesheet" href="../css/compiled.css">
     <!-- fonts from google font -->
-    <link rel="stylesheet" href="public/css/fonts.css">
+    <link rel="stylesheet" href="../css/fonts.css">
 
 </head>
 
@@ -18,11 +18,11 @@
     <!-- MOBILE NAVIGATION -->
     <nav class="nav_mobile hidden flex flex-col items-center justify-center text-4xl bebas text-custom-lightgray bg-custom-dark absolute z-40 w-full h-full">
         <div class="flex flex-col mb-8">
-            <a href="index.html" class="my-2 active">Accueil</a>
-            <a href="public/html/actualite.html" class="my-2">Actualité</a>
-            <a href="public/html/programme.html" class="my-2">Programme</a>
-            <a href="public/html/reserver.html" class="my-2">Réserver</a>
-            <a href="public/html/contact.html" class="my-2">Contact</a>
+            <a href="../../index.html" class="my-2">Accueil</a>
+            <a href="./actualite.html" class="my-2">Actualité</a>
+            <a href="./programme.html" class="my-2">Programme</a>
+            <a href="./reserver.html" class="my-2 active">Réserver</a>
+            <a href="./contact.html" class="my-2">Contact</a>
         </div>
         <div class="flex flex-col justify-center">
             <div class="flex flex-row mb-8">
@@ -66,7 +66,7 @@
         <div class="max-w-screen-2xl m-auto">
             <!-- HEADER TOP -->
             <div class="flex flex-row items-center justify-between pt-4 px-8 2xl:px-0">
-                <a href="./index.html"><img src="public/assets/light-logo.png" alt="Logo du Festival des Films de Plein Air" width="200px"></a>
+                <a href="./index.html"><img src="../assets/light-logo.png" alt="Logo du Festival des Films de Plein Air" width="200px"></a>
                 <div class="flex-row items-center hidden lg:flex">
                     <input type="text" class="border border-black rounded border-gray-300 py-px px-2" placeholder="Rechercher">
                     <button class="px-2 hover:text-custom-red duration-300 ml-1"><i class="fas fa-search"></i></button>
@@ -95,59 +95,16 @@
     <section class="bg-custom-white shadow-lg max-w-screen-2xl mx-auto mt-[-80px] transform">
         <!-- COMPUTER NAVIGATION  -->
         <nav class="nav_computer max-w-screen-xl m-auto lg:flex flex-row transform shadow-lg hidden translate-y-[calc(-100%+1px)]">
-            <a href="index.html" class="header_nav_link active">Accueil</a>
-            <a href="public/html/actualite.html" class="header_nav_link">Actualité</a>
-            <a href="public/html/programme.html" class="header_nav_link">Programme</a>
-            <a href="public/html/reserver.html" class="header_nav_link">Réserver</a>
-            <a href="public/html/contact.html" class="header_nav_link">Contact</a>
+            <a href="../../index.html" class="header_nav_link">Accueil</a>
+            <a href="./actualite.html" class="header_nav_link">Actualité</a>
+            <a href="./programme.html" class="header_nav_link">Programme</a>
+            <a href="./reserver.html" class="header_nav_link active">Réserver</a>
+            <a href="./contact.html" class="header_nav_link">Contact</a>
         </nav>
 
         <!-- CONTENT -->
         <div class="sm:p-16 p-8 lg:pt-0">
-
-            <div class="mb-16">
-                <h3 class="title-3 mb-4">Festival de 2021</h3>
-                <div class="accueil_image_festival_2021 w-full h-40 sm:h-96 mb-4"></div>
-                <p class="text-justify mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam ut, minus sequi velit illum ipsam. Vitae veniam officiis fugiat corporis consequatur excepturi. Ratione sit eveniet quos repudiandae ducimus inventore deleniti exercitationem, ut provident perspiciatis magni veniam voluptatibus tempora id et consequuntur vitae perferendis architecto rerum. Consequatur, voluptates praesentium placeat, officia odit quo repellat id labore aliquid quis expedita veritatis soluta magni delectus iure rem aperiam nam iste hic iusto adipisci minima ratione mollitia. Facilis magnam placeat tenetur natus iusto numquam quis eveniet. Maxime eius esse sequi ab. Vel, laborum. Maxime fugit autem unde nulla aut reprehenderit incidunt ipsam doloribus.</p>
-                <a href="#" class="btn_white_red inline-block py-2 px-4">Voir le programme <i class="fas fa-video"></i></a>
-            </div>
-
-            <div class="mb-16">
-                <h3 class="title-3 mb-4">Les dernières actualités</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-4">
-                    <a href="#" class="">
-                        <img src="public/assets/accueil/martin-bourboulon.jpeg" alt="actualité du festival des films de plein air de Paris" width="100%">
-                        <p class="text-xl">Interview de Martin Bourboulon à propos de son nouveau film Eiffel</p>
-                    </a>
-                    <a href="#" class="">
-                        <img src="public/assets/accueil/artus.jpeg" alt="actualité du festival des films de plein air de Paris" width="100%">
-                        <p class="text-xl">Le nouveau rôle d'Artus dans "Si on chantait"</p>
-                    </a>
-                    <a href="#" class="">
-                        <img src="public/assets/accueil/cinema.jpeg" alt="actualité du festival des films de plein air de Paris" width="100%">
-                        <p class="text-xl">Les cinémas pleins après le COVID</p>
-                    </a>
-                </div>
-                <a href="#" class="btn_white_red inline-block py-2 px-4">Voir les actus <i class="fa-solid fa-newspaper"></i></a>
-            </div>
-
-            <div class="mb-16">
-                <h3 class="title-3 mb-4">L'équipe du festival</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-4">
-                    <div>
-                        <img src="public/assets/accueil/john-doe.jpeg" alt="John Doe, régisseur" width="100%">
-                        <p class="text-xl"><span class="font-bold">John Doe</span>, Régisseur</p>
-                    </div>
-                    <div>
-                        <img src="public/assets/accueil/laure-pont.jpeg" alt="Laure Pont, directrice artistique" width="100%">
-                        <p class="text-xl"><span class="font-bold">Laure Pont</span>, Directrice artistique</p>
-                    </div>
-                    <div>
-                        <img src="public/assets/accueil/jennifer-edwards.jpeg" alt="Jennifer Edwards, organisatrice du festival" width="100%">
-                        <p class="text-xl"><span class="font-bold">Jennifer Edwards</span>, Organisatrice du festival</p>
-                    </div>
-                </div>
-            </div>
+            réserver
 
         </div>
 
@@ -232,7 +189,7 @@
     <!-- font awesome-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- mobile navigation script -->
-    <script src="./public/js/show-nav.js"></script>
+    <script src="../js/show-nav.js"></script>
 </body>
 
 </html>
