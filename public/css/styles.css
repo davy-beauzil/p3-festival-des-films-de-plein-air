@@ -208,3 +208,12 @@ header {
 }
 
 /*  <-- COMPONENTS */
+
+/* ACCUEIL --> */
+.accueil_image_festival_2021 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-image: url("../assets/accueil/festival.jpeg");
+}
+/*  <-- ACCUEIL */

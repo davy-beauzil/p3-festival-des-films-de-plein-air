@@ -10,16 +10,19 @@ function barsButton(){
         btn.remove('active');
         btn.add('not-active');
         btn.add('lg:hidden');
+        document.documentElement.style.overflow = 'visible';
     }else if (mobileNavigationIsShowed()){
         nav.remove('block');
         nav.add('hidden');
         btn.remove('active');
         btn.add('not-active');
+        document.documentElement.style.overflow = 'visible';
     }else{
         nav.add('block');
         nav.remove('hidden');
         btn.add('active');
         btn.remove('not-active');
+        document.documentElement.style.overflow = 'hidden';
     }
 }
 
@@ -31,6 +34,9 @@ function showNewsletterForm(){
         btn.remove('not-active');
         btn.remove('lg:hidden');
         btn.add('active');
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        document.documentElement.style.overflow = 'hidden';
     }
 }
 
