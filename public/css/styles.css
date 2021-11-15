@@ -83,7 +83,7 @@ header {
   @apply text-custom-dark bg-custom-lightgray rounded-full  duration-300;
 }
 .btn_white_red:hover {
-  @apply text-custom-lightgray bg-custom-red;
+  @apply text-custom-lightgray bg-custom-red cursor-pointer;
 }
 .btn_white_red > svg {
   @apply text-custom-red pl-2 duration-300;
@@ -97,7 +97,7 @@ header {
   @apply text-custom-lightgray bg-custom-red rounded-full  duration-300;
 }
 .btn_red_white:hover {
-  @apply text-custom-red bg-custom-lightgray;
+  @apply text-custom-red bg-custom-lightgray cursor-pointer;
 }
 .btn_red_white > svg {
   @apply text-custom-lightgray pl-2 duration-300;
@@ -229,3 +229,24 @@ header {
   @apply flex flex-col mb-8 sm:mb-8 md:mb-0;
 }
 /* <-- PROGRAMME */
+
+/* RÉSERVER --> */
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] ~ label {
+  cursor: pointer;
+}
+input[type="radio"]:checked + label {
+  @apply bg-custom-red text-custom-white;
+}
+.reserver_radio_group {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-8;
+}
+.reserver_label {
+  @apply bg-custom-white text-custom-red font-bold rounded py-2 px-8;
+}
+.reserver_input {
+  @apply py-1 px-2 rounded;
+}
+/* <-- RÉSERVER */

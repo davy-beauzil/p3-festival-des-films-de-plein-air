@@ -104,7 +104,25 @@
 
         <!-- CONTENT -->
         <div class="sm:p-16 p-8 lg:pt-0">
-            contact
+
+            <h3>Nous contacter</h3>
+
+            <div class="bg-custom-lightgray p-8 md:p-16 my-8 rounded flex justify-center">
+                <form class="flex flex-col w-full">
+                    <p>Vos coordonées</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+                        <input class="reserver_input" type="text" placeholder="Nom">
+                        <input class="reserver_input" type="text" placeholder="Prénom">
+                        <input class="reserver_input" type="email" name="email" id="email" placeholder="Adresse mail">
+                        <input class="reserver_input" type="tel" name="number" id="number" placeholder="Numéro de téléphone" maxlength="10">
+                    </div>
+                    <p>Votre message</p>
+                    <input class="reserver_input mb-3" type="text" placeholder="Sujet du message">
+                    <textarea class="reserver_input mb-8" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+
+                    <input class="w-min btn_red_white px-8 py-2 hover:bg-custom-white" type="button" value="Envoyer">
+                </form>
+            </div>
 
         </div>
 
