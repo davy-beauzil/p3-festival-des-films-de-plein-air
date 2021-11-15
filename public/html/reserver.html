@@ -104,7 +104,95 @@
 
         <!-- CONTENT -->
         <div class="sm:p-16 p-8 lg:pt-0">
-            réserver
+
+            <h3 class="title-3 mb-4">Réserver</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam ut, minus sequi velit illum ipsam. Vitae veniam officiis fugiat corporis consequatur excepturi. Ratione sit eveniet quos repudiandae ducimus inventore deleniti exercitationem, ut provident perspiciatis magni veniam voluptatibus tempora id et consequuntur vitae perferendis architecto rerum. Consequatur, voluptates praesentium placeat, officia odit quo repellat id labore aliquid quis expedita veritatis soluta magni delectus iure rem aperiam nam iste hic iusto adipisci minima ratione mollitia. Facilis magnam placeat tenetur natus iusto numquam quis eveniet. Maxime eius esse sequi ab. Vel, laborum. Maxime fugit autem unde nulla aut reprehenderit incidunt ipsam doloribus.</p>
+
+            <div class="bg-custom-lightgray p-8 md:p-16 mt-8 rounded flex justify-center">
+                <form class="flex flex-col w-12/12">
+
+                    <!-- Film's radio buttons -->
+                    <p>Quel film voulez-vous regarder ?</p>
+                    <!-- <div class="reserver_radio_group flex flex-row justify-center"> -->
+                    <div class="reserver_radio_group">
+                        <input type="radio" id="eiffel" name="film" value="eiffel">
+                        <label for="eiffel" class="reserver_label">
+                            Eiffel
+                        </label>
+
+                        <input type="radio" id="oranges_sanguines" name="film" value="oranges_sanguines">
+                        <label for="oranges_sanguines" class="reserver_label">
+                            Oranges sanguines
+                        </label>
+
+                        <input type="radio" id="haute_couture" name="film" value="haute_couture">
+                        <label for="haute_couture" class="reserver_label">
+                            Haute couture
+                        </label>
+
+                        <input type="radio" id="les_eternels" name="film" value="les_eternels">
+                        <label for="les_eternels" class="reserver_label">
+                            Les éternels
+                        </label>
+
+                        <input type="radio" id="aline" name="film" value="aline">
+                        <label for="aline" class="reserver_label">
+                            Aline
+                        </label>
+
+                        <input type="radio" id="tre_piani" name="film" value="tre_piani">
+                        <label for="tre_piani" class="reserver_label">
+                            Tre piani
+                        </label>
+                    </div>
+
+                    <!-- Hour's radio buttons -->
+                    <p>À quelle heure souhaitez-vous regarder ?</p>
+                    <!-- <div class="reserver_radio_group flex flex-row justify-center"> -->
+                    <div class="reserver_radio_group">
+                        <input type="radio" id="control_01" name="hours" value="1">
+                        <label for="control_01" class="reserver_label">
+                            18h - 20h
+                        </label>
+
+                        <input type="radio" id="control_02" name="hours" value="2">
+                        <label for="control_02" class="reserver_label">
+                            20h - 22h
+                        </label>
+
+                        <input type="radio" id="control_03" name="hours" value="3">
+                        <label for="control_03" class="reserver_label">
+                            22h - 00h
+                        </label>
+                    </div>
+
+                    <p>Vos coordonées</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+                        <input class="reserver_input" type="text" placeholder="Nom">
+                        <input class="reserver_input" type="text" placeholder="Prénom">
+                        <input class="reserver_input" type="email" name="email" id="email" placeholder="Adresse mail">
+                        <input class="reserver_input" type="tel" name="number" id="number" placeholder="Numéro de téléphone" maxlength="10">
+                    </div>
+
+                    <div class="mb-8">
+                        <label for="nb_places">Combien de place(s) réservez-vous ?</label>
+                        <select class="w-min py-2 px-4 rounded" name="nb_places" id="nb_places">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+
+                    <input class="w-min btn_red_white px-8 py-2 hover:bg-custom-white" type="button" value="Réserver">
+                </form>
+            </div>
 
         </div>
 
