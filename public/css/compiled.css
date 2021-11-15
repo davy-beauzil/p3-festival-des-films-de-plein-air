@@ -677,6 +677,10 @@ video {
 	margin-left: auto;
 	margin-right: auto;
 }
+.my-8 {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
 .my-4 {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
@@ -684,10 +688,6 @@ video {
 .mx-8 {
 	margin-left: 2rem;
 	margin-right: 2rem;
-}
-.my-8 {
-	margin-top: 2rem;
-	margin-bottom: 2rem;
 }
 .mb-8 {
 	margin-bottom: 2rem;
@@ -719,14 +719,17 @@ video {
 .mt-8 {
 	margin-top: 2rem;
 }
+.mb-3 {
+	margin-bottom: 0.75rem;
+}
 .mt-2 {
 	margin-top: 0.5rem;
 }
 .mt-4 {
 	margin-top: 1rem;
 }
-.mb-3 {
-	margin-bottom: 0.75rem;
+.mr-4 {
+	margin-right: 1rem;
 }
 .block {
 	display: block;
@@ -794,6 +797,9 @@ video {
 .grid-cols-1 {
 	grid-template-columns: repeat(1, minmax(0, 1fr));
 }
+.grid-cols-3 {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 .grid-cols-2 {
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -830,6 +836,9 @@ video {
 .gap-4 {
 	gap: 1rem;
 }
+.gap-6 {
+	gap: 1.5rem;
+}
 .justify-self-start {
 	justify-self: start;
 }
@@ -847,6 +856,25 @@ video {
 }
 .rounded-sm {
 	border-radius: 0.125rem;
+}
+.rounded-md {
+	border-radius: 0.375rem;
+}
+.rounded-l {
+	border-top-left-radius: 0.25rem;
+	border-bottom-left-radius: 0.25rem;
+}
+.rounded-l-xl {
+	border-top-left-radius: 0.75rem;
+	border-bottom-left-radius: 0.75rem;
+}
+.rounded-l-lg {
+	border-top-left-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+}
+.rounded-l-md {
+	border-top-left-radius: 0.375rem;
+	border-bottom-left-radius: 0.375rem;
 }
 .border {
 	border-width: 1px;
@@ -882,8 +910,8 @@ video {
 .p-8 {
 	padding: 2rem;
 }
-.p-16 {
-	padding: 4rem;
+.p-2 {
+	padding: 0.5rem;
 }
 .py-px {
 	padding-top: 1px;
@@ -923,6 +951,9 @@ video {
 .pt-28 {
 	padding-top: 7rem;
 }
+.text-left {
+	text-align: left;
+}
 .text-center {
 	text-align: center;
 }
@@ -959,6 +990,10 @@ video {
 	--tw-text-opacity: 1;
 	color: rgba(240, 87, 66, var(--tw-text-opacity));
 }
+.text-custom-darkgray {
+	--tw-text-opacity: 1;
+	color: rgba(71, 71, 71, var(--tw-text-opacity));
+}
 .underline {
 	text-decoration: underline;
 }
@@ -972,6 +1007,12 @@ video {
 }
 .duration-300 {
 	transition-duration: 300ms;
+}
+.duration-100 {
+	transition-duration: 100ms;
+}
+.duration-150 {
+	transition-duration: 150ms;
 }
 
 /* HEADER -->  */
@@ -1385,6 +1426,10 @@ input[type="radio"]:checked + label {
 	--tw-bg-opacity: 1;
 	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
+.hover\:bg-custom-lightgray:hover {
+	--tw-bg-opacity: 1;
+	background-color: rgba(242, 243, 245, var(--tw-bg-opacity));
+}
 .hover\:text-custom-red:hover {
 	--tw-text-opacity: 1;
 	color: rgba(240, 87, 66, var(--tw-text-opacity));
@@ -1392,6 +1437,9 @@ input[type="radio"]:checked + label {
 .hover\:text-custom-lightgray:hover {
 	--tw-text-opacity: 1;
 	color: rgba(242, 243, 245, var(--tw-text-opacity));
+}
+.hover\:underline:hover {
+	text-decoration: underline;
 }
 @media (min-width: 640px) {
 
@@ -1464,16 +1512,20 @@ input[type="radio"]:checked + label {
 		width: 91.666667%;
 	}
 
-	.md\:grid-cols-2 {
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-	}
-
 	.md\:grid-cols-3 {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
 
+	.md\:grid-cols-2 {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
 	.md\:flex-row {
 		flex-direction: row;
+	}
+
+	.md\:justify-center {
+		justify-content: center;
 	}
 
 	.md\:justify-between {
@@ -1483,8 +1535,16 @@ input[type="radio"]:checked + label {
 	.md\:p-16 {
 		padding: 4rem;
 	}
+
+	.md\:text-left {
+		text-align: left;
+	}
 }
 @media (min-width: 1024px) {
+
+	.lg\:mb-16 {
+		margin-bottom: 4rem;
+	}
 
 	.lg\:flex {
 		display: flex;
@@ -1498,16 +1558,26 @@ input[type="radio"]:checked + label {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
 
-	.lg\:grid-cols-4 {
-		grid-template-columns: repeat(4, minmax(0, 1fr));
-	}
-
 	.lg\:grid-cols-6 {
 		grid-template-columns: repeat(6, minmax(0, 1fr));
 	}
 
+	.lg\:grid-cols-2 {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
 	.lg\:pt-0 {
 		padding-top: 0px;
+	}
+}
+@media (min-width: 1280px) {
+
+	.xl\:mb-16 {
+		margin-bottom: 4rem;
+	}
+
+	.xl\:grid-cols-2 {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 }
 @media (min-width: 1536px) {
