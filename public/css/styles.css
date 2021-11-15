@@ -36,6 +36,9 @@
   .title-6 {
     @apply bebas text-2xl uppercase;
   }
+  .xl-bold {
+    @apply text-xl font-bold text-center;
+  }
 }
 
 /* HEADER -->  */
@@ -217,3 +220,12 @@ header {
   background-image: url("../assets/accueil/festival.jpeg");
 }
 /*  <-- ACCUEIL */
+
+/* PROGRAMME --> */
+.programme_blockday {
+  @apply grid sm:grid-cols-2 md:grid-cols-3 gap-x-8 grid-cols-1;
+}
+.programme_blockhours {
+  @apply flex flex-col mb-8 sm:mb-8 md:mb-0;
+}
+/* <-- PROGRAMME */
