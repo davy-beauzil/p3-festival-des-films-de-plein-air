@@ -1,7 +1,8 @@
 module.exports = {
   mode: 'jit',
   purge: [
-    './*.html',
+    './index.html',
+    './public/html/**/*.html'
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -13,7 +14,6 @@ module.exports = {
         lightgray: '#F2F3F5',
         white: '#FFFFFF',
         red: '#F05742',
-
       },
     }
   },

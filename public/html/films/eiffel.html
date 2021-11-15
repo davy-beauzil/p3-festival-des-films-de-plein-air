@@ -8,9 +8,9 @@
     <title>Festival du film de plein air de Paris - Accueil</title>
 
     <!-- css compiled from tailwind -->
-    <link rel="stylesheet" href="../css/compiled.css">
+    <link rel="stylesheet" href="../../css/compiled.css">
     <!-- fonts from google font -->
-    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../../css/fonts.css">
 
 </head>
 
@@ -18,11 +18,11 @@
     <!-- MOBILE NAVIGATION -->
     <nav class="nav_mobile hidden flex flex-col items-center justify-center text-4xl bebas text-custom-lightgray bg-custom-dark absolute z-40 w-full h-full">
         <div class="flex flex-col mb-8">
-            <a href="../../index.html" class="my-2">Accueil</a>
-            <a href="./actualite.html" class="my-2">Actualité</a>
-            <a href="./programme.html" class="my-2 active">Programme</a>
-            <a href="./reserver.html" class="my-2">Réserver</a>
-            <a href="./contact.html" class="my-2">Contact</a>
+            <a href="../../../index.html" class="my-2">Accueil</a>
+            <a href="../actualite.html" class="my-2">Actualité</a>
+            <a href="../programme.html" class="my-2">Programme</a>
+            <a href="../reserver.html" class="my-2">Réserver</a>
+            <a href="../contact.html" class="my-2">Contact</a>
         </div>
         <div class="flex flex-col justify-center">
             <div class="flex flex-row mb-8">
@@ -66,7 +66,7 @@
         <div class="max-w-screen-2xl m-auto">
             <!-- HEADER TOP -->
             <div class="flex flex-row items-center justify-between pt-4 px-8 2xl:px-0">
-                <a href="./index.html"><img src="../assets/light-logo.png" alt="Logo du Festival des Films de Plein Air" width="200px"></a>
+                <a href="./index.html"><img src="../../assets/light-logo.png" alt="Logo du Festival des Films de Plein Air" width="200px"></a>
                 <div class="flex-row items-center hidden lg:flex">
                     <input type="text" class="border border-black rounded border-gray-300 py-px px-2" placeholder="Rechercher">
                     <button class="px-2 hover:text-custom-red duration-300 ml-1"><i class="fas fa-search"></i></button>
@@ -95,101 +95,58 @@
     <section class="bg-custom-white shadow-lg max-w-screen-2xl mx-auto mt-[-80px] transform">
         <!-- COMPUTER NAVIGATION  -->
         <nav class="nav_computer max-w-screen-xl m-auto lg:flex flex-row transform shadow-lg hidden translate-y-[calc(-100%+1px)]">
-            <a href="../../index.html" class="header_nav_link">Accueil</a>
-            <a href="./actualite.html" class="header_nav_link">Actualité</a>
-            <a href="./programme.html" class="header_nav_link active">Programme</a>
-            <a href="./reserver.html" class="header_nav_link">Réserver</a>
-            <a href="./contact.html" class="header_nav_link">Contact</a>
+            <a href="../../../index.html" class="header_nav_link">Accueil</a>
+            <a href="../actualite.html" class="header_nav_link">Actualité</a>
+            <a href="../programme.html" class="header_nav_link">Programme</a>
+            <a href="../reserver.html" class="header_nav_link">Réserver</a>
+            <a href="../contact.html" class="header_nav_link">Contact</a>
         </nav>
 
         <!-- CONTENT -->
         <div class="sm:p-16 p-8 lg:pt-0">
-            <h3 class="title-3 mb-16">Programme du festival</h3>
 
-            <div class="md:mb-32 mb-16">
-                <h4 class="title-4 text-right mb-4 text-custom-red">Jeudi 05 août 2021</h4>
-                <div class="programme_blockday">
-                    <a href="./films/eiffel.html" class="programme_blockhours">
-                        <img src="../assets/programme/eiffel.jpg" alt="Le film Eiffel au cinéma">
-                        <p class="xl-bold mt-2">18h - 20h</p>
-                        <p class="xl-bold">Eiffel (Drame, Biopic, Comédie)</p>
-                    </a>
-                    <a href="./films/oranges-sanguines.html" class="programme_blockhours flex flex-col">
-                        <img src="../assets/programme/oranges-sanguines.jpeg" alt="Le film Oranges Sanguines au cinéma">
-                        <p class="xl-bold mt-2">20h - 22h</p>
-                        <p class="xl-bold">Oranges sanguines (Comédie, Drame)</p>
-                    </a>
-                    <a href="./films/haute-couture.html" class="programme_blockhours flex flex-col">
-                        <img src="../assets/programme/haute-couture.jpg" alt="Le film Haute Couture au cinéma">
-                        <p class="xl-bold mt-2">22h - 00h</p>
-                        <p class="xl-bold">Haute couture (Comédie dramatique)</p>
-                    </a>
+            <div class="mb-16 flex flex-col sm:flex-row">
+                <img class="mb-8 sm:mb-0 sm:mr-4" src="../../assets/programme/eiffel.jpg" alt="Le film Eiffel au cinéma">
+                <div class="sm:ml-4 flex items-center">
+                    <div>
+                        <h3 class="title-3">Eiffel</h3>
+                        <p class="my-4">Drame, Biopic, Comédie</p>
+                        <p>De : Martin Bourboulon</p>
+                        <p>Par : Caroline Bongrand</p>
+                        <p>Avec : Romain Duris, Emma Mackey, Pierre Deladonchamps</p>
+                        <a class="btn_red_white px-8 py-2 mt-4 inline-block" href="https://www.allocine.fr/film/fichefilm_gen_cfilm=254015.html">Fiche allociné <i class="fa-solid fa-film"></i></a>
+                    </div>
                 </div>
             </div>
 
-            <div class="md:mb-32 mb-16">
-                <h4 class="title-4 text-right mb-4 text-custom-red">Vendredi 06 août 2021</h4>
-                <div class="programme_blockday">
-                    <a href="./films/les-eternels.html" class="programme_blockhours">
-                        <img src="../assets/programme/les-eternels.jpg" alt="Le film Eiffel au cinéma">
-                        <p class="xl-bold mt-2">18h - 20h</p>
-                        <p class="xl-bold">Les éternels (Science fiction, Fantastique, Action)</p>
-                    </a>
-                    <a href="./films/aline.html" class="programme_blockhours flex flex-col">
-                        <img src="../assets/programme/aline.jpg" alt="Le film Oranges Sanguines au cinéma">
-                        <p class="xl-bold mt-2">20h - 22h</p>
-                        <p class="xl-bold">Aline (Drame, Biopic)</p>
-                    </a>
-                    <a href="./films/tre-piani.html" class="programme_blockhours flex flex-col">
-                        <img src="../assets/programme/tre-piani.jpg" alt="Le film Haute Couture au cinéma">
-                        <p class="xl-bold mt-2">22h - 00h</p>
-                        <p class="xl-bold">Tre piani (Comédie dramatique, Drame)</p>
-                    </a>
-                </div>
+            <div class="mb-16">
+                <h3 class="title-3 mb-4">Synopsis</h3>
+                <p class="text-justify">
+                    Venant tout juste de terminer sa collaboration sur la Statue de la Liberté, Gustave Eiffel est au sommet de sa carrière. Le gouvernement français veut qu’il crée quelque chose de spectaculaire pour l’Exposition Universelle de 1889 à Paris, mais Eiffel ne s’intéresse qu’au projet de métropolitain. Tout bascule lorsqu'il recroise son amour de jeunesse. Leur relation interdite l’inspire à changer l’horizon de Paris pour toujours.
+                </p>
             </div>
 
-            <div class="md:mb-32 mb-16">
-                <h4 class="title-4 text-right mb-4 text-custom-red">Samedi 07 août 2021</h4>
-                <div class="programme_blockday">
-                    <a href="./films/haute-couture.html" class="programme_blockhours">
-                        <img src="../assets/programme/haute-couture.jpg" alt="Le film Haute Couture au cinéma">
-                        <p class="xl-bold mt-2">18h - 20h</p>
-                        <p class="xl-bold">Haute couture (Comédie dramatique)</p>
-                    </a>
-                    <a href="./films/les-eternels.html" class="programme_blockhours">
-                        <img src="../assets/programme/les-eternels.jpg" alt="Le film Eiffel au cinéma">
-                        <p class="xl-bold mt-2">20h - 22h</p>
-                        <p class="xl-bold">Les éternels (Science fiction, Fantastique, Action)</p>
-                    </a>
-                    <a href="./films/eiffel.html" class="programme_blockhours">
-                        <img src="../assets/programme/eiffel.jpg" alt="Le film Eiffel au cinéma">
-                        <p class="xl-bold mt-2">22h - 00h</p>
-                        <p class="xl-bold">Eiffel (Drame, Biopic, Comédie)</p>
-                    </a>
-                </div>
+            <div class="mb-16">
+                <h3 class="title-3 mb-4">Bande annonce</h3>
+                <iframe class="w-full h-[40vw]" src="https://www.youtube.com/embed/iKYjMUFGPb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
-            <div class="">
-                <h4 class="title-4 text-right mb-4 text-custom-red">Dimanche 08 août 2021</h4>
-                <div class="programme_blockday">
-                    <a href="./films/tre-piani.html" class="programme_blockhours">
-                        <img src="../assets/programme/tre-piani.jpg" alt="Le film Haute Couture au cinéma">
-                        <p class="xl-bold mt-2">18h - 20h</p>
-                        <p class="xl-bold">Tre piani (Comédie dramatique, Drame)</p>
-                    </a>
-                    <a href="./films/oranges-sanguines.html" class="programme_blockhours flex flex-col">
-                        <img src="../assets/programme/oranges-sanguines.jpeg" alt="Le film Oranges Sanguines au cinéma">
-                        <p class="xl-bold mt-2">20h - 22h</p>
-                        <p class="xl-bold">Oranges sanguines (Comédie, Drame)</p>
-                    </a>
-                    <a href="./films/aline.html" class="programme_blockhours flex flex-col">
-                        <img src="../assets/programme/aline.jpg" alt="Le film Oranges Sanguines au cinéma">
-                        <p class="xl-bold mt-2">22h - 00h</p>
-                        <p class="xl-bold">Aline (Drame, Biopic)</p>
-                    </a>
+            <div>
+                <h3 class="title-3 mb-4">Séances</h3>
+                <div class="flex flex-col items-center">
+                    <div class="flex flex-col sm:flex-row justify-center">
+                        <div class="mx-8 my-2 sm:my-0">
+                            <p class="xl-bold">Jeudi 05 août</p>
+                            <p class="xl-bold text-custom-red">18h - 20h</p>
+                        </div>
+                        <div class="mx-8 my-2 sm:my-0">
+                            <p class="xl-bold">Samedi 07 août</p>
+                            <p class="xl-bold text-custom-red">22h - 00h</p>
+                        </div>
+                    </div>
+                    <a class="btn_red_white px-8 py-2 mt-8" href="../reserver.html">Réserver <i class="fa-solid fa-bookmark"></i></a>
                 </div>
             </div>
-
 
         </div>
 
@@ -274,7 +231,7 @@
     <!-- font awesome-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- mobile navigation script -->
-    <script src="../js/show-nav.js"></script>
+    <script src="../../js/show-nav.js"></script>
 </body>
 
 </html>
