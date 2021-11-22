@@ -23,5 +23,5 @@ Vous devrez ensuite réaliser une première maquette de ce site correspondant à
 
 ## Livrables
 
-- Cahier des charges au format PDF.
+- [Cahier des charges](https://github.com/davy-beauzil/p3-festival-des-films-de-plein-air/blob/main/PFILM_01_cahierdescharges.pdf) au format PDF.
 - Code source complet du projet (HTML, CSS et autres fichiers nécessaires, zippés)
